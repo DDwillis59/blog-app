@@ -1,0 +1,86 @@
+html{
+  font-family: sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: block;
+  background: linear-gradient(#99738e, #2f2fa2);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBarText{
+  color: #242582;
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+}
+
+
+body{
+  color: white;
+  background: #2f2fa2;
+  padding-top: 80px;
+  
+}
+
+header{
+  margin: 20px auto;
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.blogPost{
+  color: #2f2fa2;
+  background-color: white;
+  border: 1cm;
+  border-radius: 20px;
+  width: 50%;
+  margin:  2em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.blogPost h2{
+  display: block;
+  text-align: center;
+}
+
+.blogPost p{
+  padding: 2px;
+  margin-left: 20px;
+  display: block;
+  width: 95%;
+  word-wrap: break-word;
+}
+
+.blogPost a{
+  font-weight: bold;
+  display: flex;
+  border-radius: 20px;
+  width:  90px;
+  height: 22px;
+  color: white;
+  background-color: #553d67;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
