@@ -26,9 +26,6 @@ function Post(){
         
     }, [])
 
-
-
-
     return(
         
         <div>
