@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+var cors = require('cors')
+
 
 dotenv.config();
 
@@ -16,7 +18,7 @@ const postSchema = mongoose.Schema({
 });
 
 const Post = mongoose.model("Post",postSchema);
-
+app.use(cors())
 
 app.get("/home", (req, res)=>{
 
