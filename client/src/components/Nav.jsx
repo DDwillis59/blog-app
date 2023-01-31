@@ -3,7 +3,13 @@ import React from "react"
 function Nav(){
     return(
         <nav>
-            <h1 className="navBarText">Daeshaun Willis</h1>
+            
+            <ul className="navBar">
+                <li><a href="/">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+            
         </nav>
     )
 };

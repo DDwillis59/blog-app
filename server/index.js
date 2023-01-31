@@ -28,6 +28,15 @@ app.get("/home", (req, res)=>{
     });
 });
 
+app.get("/blog/:blogid", (req, res)=>{
+    const blog = req.params.blogid
+
+    Post.findOne({_id: blog},(err, post)=>{
+        if (err) return res.status(500).send(err);
+        res.send(post);
+    })
+})
+
 
 app.listen(3001, ()=>{
     console.log("Listening")
